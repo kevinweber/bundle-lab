@@ -1,12 +1,12 @@
 const webpack = require("webpack");
-const entryConfigs = require("./src/config");
+const entryConfigs = require("./src/bundle-sizes.config");
 const IS_PROD = process.env.NODE_ENV === "production";
 
 const entry = {};
 Object.values(entryConfigs).forEach(({ webpackEntryName }) => {
-  entry[webpackEntryName] = `./src/bundles/${webpackEntryName}.jsx`;
+  entry[webpackEntryName] = `./src/bundle-sizes/${webpackEntryName}.jsx`;
 });
-entry["analyzer"] = `./src/analyzer.jsx`;
+entry["analyzeBundleSizes"] = `./src/bundle-sizes.analyze.jsx`;
 
 module.exports = {
   mode: IS_PROD ? "production" : "development",

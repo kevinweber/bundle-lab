@@ -1,4 +1,5 @@
-import fileMapping from "./config";
+import fileMapping from "./bundle-sizes.config";
+
 const list = document.getElementById("bundles");
 
 function showEnvironment() {
