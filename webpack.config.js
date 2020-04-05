@@ -6,6 +6,7 @@ const entry = {};
 Object.values(entryConfigs).forEach(({ webpackEntryName }) => {
   entry[webpackEntryName] = `./src/bundles/${webpackEntryName}.jsx`;
 });
+entry["analyzer"] = `./src/analyzer.jsx`;
 
 module.exports = {
   mode: IS_PROD ? "production" : "development",
