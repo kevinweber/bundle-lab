@@ -25,6 +25,10 @@ module.exports = {
     label: "date-fns/format",
     webpackEntryName: "dateFns",
   },
+  "reactDates.js": {
+    label: "react-dates",
+    webpackEntryName: "reactDates",
+  },
   "lodash.js": {
     label: "lodash",
     webpackEntryName: "lodash",
