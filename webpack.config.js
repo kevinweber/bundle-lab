@@ -11,6 +11,8 @@ module.exports = {
     combat: "./src/js/combat.jsx",
     moment: "./src/js/moment.jsx",
     dateFns: "./src/js/dateFns.jsx",
+    lodash: "./src/js/lodash.jsx",
+    lodashPick: "./src/js/lodashPick.jsx",
   },
   module: {
     rules: [

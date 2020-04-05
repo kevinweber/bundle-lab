@@ -19,6 +19,12 @@ const fileMapping = {
   "dateFns.js": {
     label: "date-fns",
   },
+  "lodash.js": {
+    label: "lodash",
+  },
+  "lodashPick.js": {
+    label: "lodash/pick",
+  },
 };
 
 function showEnvironment() {
