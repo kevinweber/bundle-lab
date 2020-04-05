@@ -1,8 +1,8 @@
 # Bundle Lab
 
-Run `npm run app` to run a server.
-Run `npm run build:watch` to live-update development files.
-Run `npm run prod:watch` to live-update production files.
+- Run `npm run app` to run a server.
+- Run `npm run build:watch` to live-update development files.
+- Run `npm run prod:watch` to live-update production files.
 
 ## The approach
 
