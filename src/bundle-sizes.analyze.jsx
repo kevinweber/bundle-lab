@@ -1,12 +1,7 @@
 import fileMapping from "./bundle-sizes.config";
+import { showEnvironment } from "./shared";
 
 const list = document.getElementById("bundles");
-
-function showEnvironment() {
-  document.getElementById(
-    "env"
-  ).textContent = `ON ${process.env.NODE_ENV.toUpperCase()}`;
-}
 
 function visualizeFileData({ name, encodedBodySize, decodedBodySize }) {
   // NOTE: This naive approach won't work if the requested URL has a query param or hash
@@ -41,7 +36,7 @@ function observe() {
 
 function fetchFiles() {
   Object.keys(fileMapping).forEach((filename) => {
-    fetch(`assets/js/${filename}`);
+    fetch(`assets/js/bundle-sizes/${filename}`);
   });
 }
 

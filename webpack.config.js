@@ -3,10 +3,18 @@ const entryConfigs = require("./src/bundle-sizes.config");
 const IS_PROD = process.env.NODE_ENV === "production";
 
 const entry = {};
+
+// Bundles for bundle size analysis
 Object.values(entryConfigs).forEach(({ webpackEntryName }) => {
-  entry[webpackEntryName] = `./src/bundle-sizes/${webpackEntryName}.jsx`;
+  entry[
+    `bundle-sizes/${webpackEntryName}`
+  ] = `./src/bundle-sizes/${webpackEntryName}.jsx`;
 });
-entry["analyzeBundleSizes"] = `./src/bundle-sizes.analyze.jsx`;
+entry["bundle-sizes/analyze"] = `./src/bundle-sizes.analyze.jsx`;
+
+// Bundles for render performance analysis
+entry["render-performance/reactDom"] = `./src/render-performance/reactDom.jsx`;
+entry["render-performance/analyze"] = `./src/render-performance.analyze.jsx`;
 
 module.exports = {
   mode: IS_PROD ? "production" : "development",
