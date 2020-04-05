@@ -24,7 +24,7 @@ const fileMapping = {
 function showEnvironment() {
   document.getElementById(
     "env"
-  ).textContent = process.env.NODE_ENV.toUpperCase();
+  ).textContent = `ON ${process.env.NODE_ENV.toUpperCase()}`;
 }
 
 function visualizeFileData({ name, encodedBodySize, decodedBodySize }) {
@@ -37,9 +37,9 @@ function visualizeFileData({ name, encodedBodySize, decodedBodySize }) {
 
   const text = `<span style="display:inline-block;width:200px">${
     fileMapping[filename].label
-  }: </span>${(encodedBodySize / 1000).toFixed(1)} kb (decoded: ${(
-    decodedBodySize / 1000
-  ).toFixed(1)} kb)`;
+  }: </span>encoded: <b>${(encodedBodySize / 1000).toFixed(
+    1
+  )} kb</b> –– decoded: ${(decodedBodySize / 1000).toFixed(1)} kb`;
 
   const li = document.createElement("li");
   li.innerHTML = text;
