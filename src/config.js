@@ -22,7 +22,7 @@ module.exports = {
     webpackEntryName: "moment",
   },
   "dateFns.js": {
-    label: "date-fns",
+    label: "date-fns/format",
     webpackEntryName: "dateFns",
   },
   "lodash.js": {

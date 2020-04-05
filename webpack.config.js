@@ -4,7 +4,7 @@ const IS_PROD = process.env.NODE_ENV === "production";
 
 const entry = {};
 Object.values(entryConfigs).forEach(({ webpackEntryName }) => {
-  entry[webpackEntryName] = `./src/js/${webpackEntryName}.jsx`;
+  entry[webpackEntryName] = `./src/bundles/${webpackEntryName}.jsx`;
 });
 
 module.exports = {
