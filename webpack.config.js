@@ -1,19 +1,15 @@
 const webpack = require("webpack");
+const entryConfigs = require("./src/config");
 const IS_PROD = process.env.NODE_ENV === "production";
+
+const entry = {};
+Object.values(entryConfigs).forEach(({ webpackEntryName }) => {
+  entry[webpackEntryName] = `./src/js/${webpackEntryName}.jsx`;
+});
 
 module.exports = {
   mode: IS_PROD ? "production" : "development",
-  entry: {
-    analyzer: "./src/js/analyzer.jsx",
-    react: "./src/js/react.jsx",
-    reactDom: "./src/js/reactDom.jsx",
-    preact: "./src/js/preact.jsx",
-    combat: "./src/js/combat.jsx",
-    moment: "./src/js/moment.jsx",
-    dateFns: "./src/js/dateFns.jsx",
-    lodash: "./src/js/lodash.jsx",
-    lodashPick: "./src/js/lodashPick.jsx",
-  },
+  entry,
   module: {
     rules: [
       {

@@ -1,31 +1,5 @@
+import fileMapping from "../config";
 const list = document.getElementById("bundles");
-
-const fileMapping = {
-  "react.js": {
-    label: "React only",
-  },
-  "reactDom.js": {
-    label: "React + ReactDom",
-  },
-  "preact.js": {
-    label: "Preact only",
-  },
-  "combat.js": {
-    label: "Preact + Preact/Combat",
-  },
-  "moment.js": {
-    label: "moment",
-  },
-  "dateFns.js": {
-    label: "date-fns",
-  },
-  "lodash.js": {
-    label: "lodash",
-  },
-  "lodashPick.js": {
-    label: "lodash/pick",
-  },
-};
 
 function showEnvironment() {
   document.getElementById(
