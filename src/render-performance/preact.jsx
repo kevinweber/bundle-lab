@@ -1,9 +1,11 @@
-import React, { useState, useEffect, Fragment } from "react";
-import { render } from "react-dom";
+// /* eslint-disable react/react-in-jsx-scope */
+import { render, Fragment } from "preact";
+import React from "preact/compat";
+import { useState, useEffect } from "preact/hooks";
 import times from "lodash/times";
 
 //
-// NOTE: BELOW CODE MATCHES EXACTLY WITH WHAT'S IN preact.jsx
+// NOTE: BELOW CODE MATCHES EXACTLY WITH WHAT'S IN reactDom.jsx
 //
 
 // eslint-disable-next-line react/prop-types
