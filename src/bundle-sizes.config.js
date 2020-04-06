@@ -37,4 +37,12 @@ module.exports = {
     label: "lodash/pick",
     webpackEntryName: "lodashPick",
   },
+  "airbnbJsShims.js": {
+    label: "airbnb-js-shims",
+    webpackEntryName: "airbnbJsShims",
+  },
+  "airbnbBrowserShims.js": {
+    label: "airbnb-browser-shims",
+    webpackEntryName: "airbnbBrowserShims",
+  },
 };
