@@ -3,7 +3,7 @@ import { render } from "react-dom";
 import times from "lodash/times";
 
 //
-// NOTE: BELOW CODE MATCHES EXACTLY WITH WHAT'S IN preact.jsx
+// NOTE: BELOW CODE MATCHES EXACTLY WITH WHAT'S IN preactCombat.jsx
 //
 
 // eslint-disable-next-line react/prop-types
