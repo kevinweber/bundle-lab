@@ -13,9 +13,9 @@ module.exports = {
     label: "Preact only",
     webpackEntryName: "preact",
   },
-  "combat.js": {
-    label: "Preact + Preact/Combat",
-    webpackEntryName: "combat",
+  "preactCompat.js": {
+    label: "Preact + Preact/Compat",
+    webpackEntryName: "preactCompat",
   },
   "moment.js": {
     label: "moment",

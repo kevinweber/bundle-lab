@@ -15,8 +15,8 @@ entry["bundle-sizes/analyze"] = `./src/bundle-sizes.analyze.jsx`;
 // Bundles for render performance analysis
 entry["render-performance/reactDom"] = `./src/render-performance/reactDom.jsx`;
 entry[
-  "render-performance/preactCombat"
-] = `./src/render-performance/preactCombat.jsx`;
+  "render-performance/preactCompat"
+] = `./src/render-performance/preactCompat.jsx`;
 entry["render-performance/analyze"] = `./src/render-performance.analyze.jsx`;
 
 module.exports = {

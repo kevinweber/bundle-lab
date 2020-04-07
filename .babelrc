@@ -3,7 +3,7 @@
   "plugins": ["@babel/plugin-transform-react-jsx"]
 }
 
-// Preact setup without "preact/combat":
+// Preact setup without "preact/compat":
 // {
 //   "presets": ["@babel/preset-env"],
 //   "plugins": [

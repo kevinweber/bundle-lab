@@ -1,5 +1,5 @@
 /* eslint-disable react/react-in-jsx-scope */
-// As long as we import "preact/combat" and "pragma: h" isn't set in .babelrc, we don't need to import "h":
+// As long as we import "preact/compat" and "pragma: h" isn't set in .babelrc, we don't need to import "h":
 // import { h, render, Fragment } from "preact";
 import { render, Fragment } from "preact";
 import React from "preact/compat";
