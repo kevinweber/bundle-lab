@@ -1,6 +1,5 @@
 import React, { useState, useEffect, Fragment } from "react";
 import { render } from "react-dom";
-import times from "lodash/times";
 
 //
 // NOTE: BELOW CODE MATCHES EXACTLY WITH WHAT'S IN preactCompat.jsx
@@ -48,11 +47,12 @@ function BlowUpDom({ endTest }) {
   }, [hasUpdatedBackground]);
 
   const elements = [];
-  times(3000, (i) => {
+
+  for (let index = 3000; index > 0; index--) {
     elements.push(
-      <NestedDivs background={hasUpdatedBackground ? "red" : "black"} key={i} />
+      <NestedDivs background={hasUpdatedBackground ? "red" : "black"} key={index} />
     );
-  });
+  }
 
   return <Fragment>{elements}</Fragment>;
 }
