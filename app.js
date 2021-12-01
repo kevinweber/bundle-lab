@@ -10,8 +10,8 @@ const openBrowser =
   process.platform == "darwin"
     ? "open"
     : process.platform == "win32"
-    ? "start"
-    : "xdg-open";
+      ? "start"
+      : "xdg-open";
 
 // Compress files or they appear much bigger than what we're actually sending over the wire.
 // NOTE: The compression middleware removes the Content-Length header.

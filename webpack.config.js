@@ -27,18 +27,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        use: [
-          {
-            loader: "babel-loader",
-          },
-          {
-            loader: "eslint-loader",
-            options: {
-              // This option makes ESLint automatically fix minor issues
-              fix: true,
-            },
-          },
-        ],
+        use: ['babel-loader'],
       },
     ],
   },
@@ -55,7 +44,7 @@ module.exports = {
   },
   plugins: [
     new webpack.EnvironmentPlugin({
-      NODE_ENV: "development", // use 'development' unless process.env.NODE_ENV is defined
+      NODE_ENV: process.env.NODE_ENV || "development",
     }),
   ],
 };

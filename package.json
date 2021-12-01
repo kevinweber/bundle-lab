@@ -1,13 +1,13 @@
 {
   "private": true,
   "name": "bundle-lab",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "scripts": {
     "app": "node app.js",
-    "prod": "NODE_ENV='production' npm run build -- -p",
+    "prod": "NODE_ENV='production' npm run build",
     "prod:watch": "npm run prod -- --watch",
-    "build": "webpack --progress --colors --config ./webpack.config.js",
+    "build": "webpack --progress --config ./webpack.config.js",
     "build:watch": "npm run build -- --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npm start -- --watch"
@@ -26,9 +26,6 @@
     "compression": "^1.7.4",
     "css-loader": "^6.5.1",
     "date-fns": "^2.11.1",
-    "eslint": "^8.3.0",
-    "eslint-loader": "^4.0.0",
-    "eslint-plugin-react": "^7.19.0",
     "express": "^4.17.1",
     "fibers": "^5.0.0",
     "file-loader": "^6.0.0",
